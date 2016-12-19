@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>省市地区三级联动</title>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="jquery.cityselect.min.js"></script>
+    <script>
+        jQuery(function () {
+            jQuery("#city").citySelect({ 
+				url:"jquery.cityselect.citylist.json",
+				prov:"江苏", //省份 
+				city:"南京", //城市 
+				dist:"玄武区", //区县 
+				nodata:"none" //当子集无数据时，隐藏select 
+			}); 
+        });
+    </script>
+</head>
+<body>
+<p>省市地区三级联动</p>
+<div id="city">
+    <select class="prov"></select>
+    <select class="city" disabled="disabled"></select>
+    <select class="dist" disabled="disabled"></select>
+</div>
+</body>
+</html>
