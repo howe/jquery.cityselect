@@ -26,3 +26,6 @@ jQuery(function () {
     <select class="dist" disabled="disabled"></select>
 </div>
 ```
+
+####demo地址
+[http://howe.im/jquery.cityselect/]
